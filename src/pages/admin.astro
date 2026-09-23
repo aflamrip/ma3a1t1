@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AdminDashboard from '../components/AdminDashboard.svelte';
+
+const pageTitle = "لوحة تحكم إدارة المحتوى | معاك سيما";
+---
+
+<Layout title={pageTitle} noindex={true}>
+  <div class="py-6">
+    <AdminDashboard client:only="svelte" />
+  </div>
+</Layout>
